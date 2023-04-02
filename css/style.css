@@ -1,0 +1,54 @@
+:root {
+  /* colors */
+  --logoBlue-color: #016297;
+  --lightBlue-color: #dff2f7;
+  --logoGreen-color: #2bb673;
+  --darkGreen-color: #00935e;
+  --mainBlack-color: #2e3133;
+  --backgroundWhite-color: #ffffff;
+  --pointOrange-color: #e37e3d;
+  --darkGrey-color: #757575;
+  --lightGrey-color: #c9d0d6;
+
+  /* fonts */
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Prompt", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* header */
+header {
+  color: var(--darkGrey-color);
+}
+h1 {
+  color: var(--logoGreen-color);
+}
+
+body {
+  font-family: var(--primary-font), var(--secondary-font);
+}
+
+/* footer */
+footer {
+  font-family: var(--secondary-font);
+  color: var(--darkGrey-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+footer ul li a {
+  margin: 10px;
+  color: var(--darkGrey-color);
+}
