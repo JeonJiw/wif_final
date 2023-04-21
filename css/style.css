@@ -94,6 +94,7 @@ main div#main-img div.intro-text {
   padding: 2em;
   font-size: 1.2em;
   font-weight: 100;
+  text-align: center;
 }
 main div#main-img div.intro-text p {
   margin: 0.5em;
@@ -266,6 +267,14 @@ footer p {
   }
 
   /* Main */
+  main div#main-img div.fir-img-cont {
+    font-size: 2em;
+  }
+
+  main div#main-img div.sec-img-cont {
+    font-size: 2em;
+  }
+
   main div.contact-info {
     display: flex;
     justify-content: space-evenly;
