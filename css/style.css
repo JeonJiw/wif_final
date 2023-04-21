@@ -10,7 +10,7 @@
   --mainBlack-color: #2e3133;
   --backgroundWhite-color: #ffffff;
   --pointOrange-color: #e37e3d;
-  --darkGrey-color: #757575;
+  --darkGrey-color: #5b5959;
   --lightGrey-color: #d1d9e0;
 
   /* fonts */
@@ -28,9 +28,6 @@
 /* header */
 header {
   color: var(--darkGrey-color);
-  /* display: flex; */
-  /* border-bottom: 1px solid var(--lightGrey-color); */
-  /*   justify-content: space-between; */
 }
 
 header div#logo-bar {
@@ -165,7 +162,6 @@ main div#contact img {
 }
 
 main div.contact-info {
-  /* background-color: var(--lightGreen-color); */
   color: var(--darkGrey-color);
   text-align: center;
   padding-bottom: 4em;
@@ -176,7 +172,7 @@ main div.contact-info p {
   padding: 1em;
   margin: auto;
 }
-main div.contact-info p.sub-title {
+main div.contact-info p.contact-title {
   font-size: 2em;
   padding-bottom: 1em;
 }
@@ -224,4 +220,66 @@ footer ul li a {
 footer p {
   font-weight: 300;
   padding-top: 1em;
+}
+
+/* Browser */
+@media only screen and (min-width: 600px) {
+  /* header */
+  header {
+    color: var(--darkGrey-color);
+    display: flex;
+  }
+
+  header div#menu-icon i {
+    display: none;
+  }
+
+  header nav {
+    display: initial;
+    text-align: center;
+  }
+
+  header nav#nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-top: 1em;
+  }
+
+  header nav#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav#nav-bar ul li {
+    width: 10em;
+  }
+
+  header li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--darkGrey-color);
+  }
+
+  header nav ul li:hover {
+    background-color: transparent;
+  }
+
+  /* Main */
+  main div.contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+  }
+
+  main div.contact-info div.info-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main div.contact-info div.goto-box {
+    display: flex;
+    margin-left: 4em;
+    margin-top: 4em;
+  }
 }
