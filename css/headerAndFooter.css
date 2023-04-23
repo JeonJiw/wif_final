@@ -1,0 +1,155 @@
+:root {
+  /* colors */
+  --logoBlue-color: #016297;
+  --lightBlue-color: #dff2f7;
+  --darkBlue-color: #252647;
+  --logoGreen-color: #a4cb6a;
+  --forestGreen-color: #2ab573;
+  --lightGreen-color: #dceac6;
+  --darkGreen-color: #00935e;
+  --mainBlack-color: #2e3133;
+  --backgroundWhite-color: #ffffff;
+  --pointOrange-color: #e37e3d;
+  --darkGrey-color: #5b5959;
+  --lightGrey-color: #d1d9e0;
+
+  /* fonts */
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Prompt", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration-line: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* header */
+header {
+  color: var(--darkGrey-color);
+  border-bottom: 0.1em solid var(--lightGrey-color);
+}
+
+header div#logo-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div#logo-img img {
+  width: 10em;
+  margin: 0.625em;
+}
+
+header div#menu-icon i {
+  margin: 0.625em;
+}
+
+header div#menu-icon i:hover {
+  cursor: pointer;
+}
+
+header nav {
+  display: none;
+  text-align: center;
+}
+
+header nav ul li {
+  padding: 0.625em;
+  font-size: 1em;
+}
+
+header nav ul li:hover {
+  background-color: var(--logoGreen-color);
+}
+
+header li a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--darkGrey-color);
+}
+
+footer {
+  font-family: var(--secondary-font);
+  color: var(--darkGrey-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 13px;
+  padding: 50px;
+  border-top: 0.2em solid var(--lightGrey-color);
+}
+
+footer h4.follow {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+}
+
+footer ul {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+footer ul li a {
+  margin: 10px;
+  color: var(--darkGrey-color);
+  padding-top: 1em;
+}
+
+footer p {
+  font-weight: 300;
+  padding-top: 1em;
+}
+@media only screen and (min-width: 600px) {
+  /* header */
+  header {
+    color: var(--darkGrey-color);
+    display: flex;
+  }
+
+  header div#menu-icon i {
+    display: none;
+  }
+
+  header nav {
+    display: initial;
+    text-align: center;
+  }
+
+  header nav#nav-bar {
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-top: 1em;
+  }
+
+  header nav#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav#nav-bar ul li {
+    width: 10em;
+  }
+
+  header li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--darkGrey-color);
+  }
+
+  header nav ul li:hover {
+    background-color: transparent;
+  }
+}

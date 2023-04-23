@@ -15,3 +15,20 @@ function openNav() {
     open = 0;
   }
 }
+
+const slides = document.querySelectorAll(".slide");
+let current = 0;
+
+function showSlide() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("on");
+  }
+  current++;
+  if (current > slides.length) {
+    current = 1;
+  }
+  slides[current - 1].classList.add("on");
+  setTimeout(showSlide, 3000);
+}
+
+showSlide();

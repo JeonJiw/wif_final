@@ -1,0 +1,57 @@
+main {
+  /*  background-color: var(--lightGreen-color); */
+  color: var(--darkBlue-color);
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 800;
+  padding: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+  padding-top: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+div.about-text {
+  padding: 1em;
+}
+div.btn {
+  margin-top: 1em;
+}
+div.btn a {
+  width: 9em;
+  margin: 0 1em 1em 0;
+  border-radius: 0.3em;
+  border: transparent;
+  padding: 0.5em;
+  text-decoration-line: none;
+  color: var(--backgroundWhite-color);
+  background-color: var(--pointOrange-color);
+}
+
+.slider {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider .slide {
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+
+.slider img.slide.on {
+  display: block;
+}
