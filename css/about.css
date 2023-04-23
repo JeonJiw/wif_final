@@ -25,6 +25,13 @@ img {
 div.about-text {
   padding: 1em;
 }
+
+div.about-sec {
+  padding: 1em;
+}
+div.about-third {
+  padding: 1em;
+}
 div.btn {
   margin-top: 1em;
 }
@@ -54,4 +61,52 @@ div.btn a {
 
 .slider img.slide.on {
   display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-fir,
+  .about-sec,
+  .about-thrid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-fir .fir-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-sec {
+    display: flex;
+    height: 22em;
+    padding: 2em;
+    background-color: var(--lightGreen-color);
+  }
+
+  .about-sec .sec-left2 {
+    position: relative;
+    left: -40em;
+    top: 6em;
+  }
+  .about-sec .sec-right {
+    position: absolute;
+    right: 1em;
+  }
+
+  .about-third {
+    margin: 2em;
+  }
+  .logo {
+    display: none;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  div.btn {
+    margin-top: 1.5em;
+  }
 }
