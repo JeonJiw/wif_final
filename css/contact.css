@@ -47,7 +47,6 @@ iframe {
 
 .contact-info h2 {
   margin-bottom: 0.5em;
-  margin-top: 1em;
 }
 
 .contact-form {
@@ -88,4 +87,29 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: var(--forestGreen-color);
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-p {
+    text-align: center;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact-info {
+    flex-basis: 45%;
+  }
+
+  .contact-form {
+    flex-basis: 45%;
+  }
+
+  .contact-info div {
+    margin-bottom: 3em;
+  }
 }
