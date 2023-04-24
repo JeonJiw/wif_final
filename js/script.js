@@ -32,3 +32,16 @@ function showSlide() {
 }
 
 showSlide();
+
+// Initialize and add the map
+function initMap() {
+  // The location of our company
+  var company = { lat: 40.7128, lng: -74.006 };
+  // The map, centered at company
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: company,
+  });
+  // The marker, positioned at company
+  var marker = new google.maps.Marker({ position: company, map: map });
+}

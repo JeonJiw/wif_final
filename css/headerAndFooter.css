@@ -5,13 +5,15 @@
   --darkBlue-color: #252647;
   --logoGreen-color: #a4cb6a;
   --forestGreen-color: #2ab573;
-  --lightGreen-color: #dceac6;
+  /*   --lightGreen-color: #dceac6; */
+  --lightGreen-color: #f1f8e7;
   --darkGreen-color: #00935e;
   --mainBlack-color: #2e3133;
   --backgroundWhite-color: #ffffff;
   --pointOrange-color: #e37e3d;
   --darkGrey-color: #5b5959;
   --lightGrey-color: #d1d9e0;
+  --lightBeige-color: #f5f5f5;
 
   /* fonts */
   --primary-font: "Montserrat", sans-serif;
