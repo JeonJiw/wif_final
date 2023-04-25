@@ -32,3 +32,35 @@ function showSlide() {
 }
 
 showSlide();
+
+function toggleList(event) {
+  const parentDiv = event.target.parentNode;
+  const resOpenSpan = document.querySelector("#res-open");
+  const resCloseSpan = document.querySelector("#res-close");
+  const comOpenSpan = document.querySelector("#com-open");
+  const comCloseSpan = document.querySelector("#com-close");
+  const resList = document.querySelector("#res-list");
+  const comList = document.querySelector("#com-list");
+
+  if (parentDiv.classList.contains("residential-title")) {
+    if (resList.style.display === "none") {
+      resList.style.display = "block";
+      resOpenSpan.style.display = "none";
+      resCloseSpan.style.display = "inline";
+    } else {
+      resList.style.display = "none";
+      resOpenSpan.style.display = "inline";
+      resCloseSpan.style.display = "none";
+    }
+  } else if (parentDiv.classList.contains("commercial-title")) {
+    if (comList.style.display === "none") {
+      comList.style.display = "block";
+      comOpenSpan.style.display = "none";
+      comCloseSpan.style.display = "inline";
+    } else {
+      comList.style.display = "none";
+      comOpenSpan.style.display = "inline";
+      comCloseSpan.style.display = "none";
+    }
+  }
+}

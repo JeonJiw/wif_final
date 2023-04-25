@@ -25,6 +25,7 @@
     <main>
       <div class="services-fir">
         <h1>Services</h1>
+       
         <div class="services-img-container">
           <img src="img/laying_sod_3.jpg" alt="" />
         </div>
@@ -79,11 +80,12 @@
         </div>
       </div>
       <div class="services-sec">
+        <div id="lists">
         <div class="residential">
           <div class="residential-title">
             <h2>RESIDENTIAL SERVICES</h2>
-            <span id="open">🔽</span>
-            <span id="close">🔼</span>
+            <span id="res-open" onclick="toggleList(event)">🔽</span>
+            <span id="res-close"onclick="toggleList(event)"">🔼</span>
           </div>
           <ul id="res-list">
             <li>Landscape Maintenance</li>
@@ -114,8 +116,8 @@
         <div class="commercial">
           <div class="commercial-title">
             <h2>COMMERCIAL SERVICES</h2>
-            <span id="open">🔽</span>
-            <span id="close">🔼</span>
+            <span id="com-open" onclick="toggleList(event)">🔽</span>
+            <span id="com-close" onclick="toggleList(event)">🔼</span>
           </div>
           <ul id="com-list">
             <li>Landscape Maintenance</li>
@@ -139,6 +141,7 @@
             <li>Entryway features</li>
           </ul>
         </div>
+      </div>
         <div id="btn">
           <a class="btn-onlineEst" href="onlineEstimate.html"
             >ONLINE ESTIMATE</a
