@@ -1,5 +1,5 @@
 main {
-  /*  background-color: var(--lightGreen-color); */
+  background-color: var(--lightGreen-color);
   color: var(--darkBlue-color);
 }
 
@@ -20,6 +20,7 @@ h3 {
 
 img {
   width: 100%;
+  border-radius: 0.5em;
 }
 
 div.about-text {

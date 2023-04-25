@@ -12,6 +12,8 @@ div.contact-p p {
   padding-bottom: 0.5em;
 }
 h1 {
+  font-size: 1.6em;
+  font-weight: 800;
   margin-bottom: 0.625em;
 }
 
@@ -47,6 +49,10 @@ iframe {
 
 .contact-info h2 {
   margin-bottom: 0.5em;
+}
+
+.contact-us h2 {
+  margin-top: 1em;
 }
 
 .contact-form {
