@@ -21,7 +21,7 @@ class MyHeader extends HTMLElement {
             <a href="contact.html">Contact Us</a>
           </li>
           <li>
-            <a href="service.html">Service</a>
+            <a href="service.html">Services</a>
           </li>
           <li>
             <a href="onlineEstimate.html">Online Estimate</a>
