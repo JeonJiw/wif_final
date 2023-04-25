@@ -1,0 +1,43 @@
+main {
+  margin: 0;
+  color: var(--darkBlue-color);
+  background-color: var(--lightGreen-color);
+  padding: 2em;
+}
+
+.testimonials-intro h1 {
+  margin-bottom: 1em;
+  font-weight: 800;
+}
+
+.testimonials-intro p {
+  margin-bottom: 1em;
+}
+
+.review-box {
+  background-color: var(--lightBeige-color);
+  padding: 1em;
+  border: 0.1em solid var(--lightGrey-color);
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+
+.reviewer {
+  margin-bottom: 0.2em;
+  font-weight: 800;
+}
+
+.review-stars {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  display: flex;
+}
+.review-stars p {
+  margin-left: 1em;
+  margin-bottom: 0em;
+  margin-top: 0.3em;
+}
+
+.review-content {
+  line-height: 2;
+}
