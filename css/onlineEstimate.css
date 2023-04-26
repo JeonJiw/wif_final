@@ -1,0 +1,50 @@
+main {
+  margin: 0;
+  color: var(--darkBlue-color);
+  background-color: var(--lightGreen-color);
+  padding: 2em;
+  line-height: 2;
+}
+
+.estimate-intro {
+  margin-bottom: 2em;
+}
+
+.estimate-intro h1 {
+  font-size: 1.6em;
+  font-weight: 800;
+  margin-bottom: 0.625em;
+}
+
+.form-container {
+  background-color: var(--lightBeige-color);
+  margin-top: 1em;
+  padding: 1em;
+  border: 0.1em solid var(--lightGrey-color);
+  border-radius: 0.5em;
+}
+
+.form-container .service-name {
+  font-size: 1em;
+}
+
+.form-container .service-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.form-container .service-price input {
+  width: 10em;
+}
+
+.price-result {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.price-result .estimate-price {
+  width: 10em;
+}

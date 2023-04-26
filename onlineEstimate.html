@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/headerAndFooter.css" />
+    <link rel="stylesheet" href="css/onlineEstimate.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Prompt:wght@300;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Prompt:wght@300;500;800&display=swap"
       rel="stylesheet"
     />
     <script
@@ -21,7 +22,96 @@
   </head>
   <body>
     <my-header></my-header>
-    <h1>Online Estimate</h1>
+    <main>
+      <div class="estimate-intro">
+        <h1>ONLINE ESTIMATE</h1>
+        <p>Have a landscaping idea but not sure where to start?</p>
+        <p>You can get a decent idea of cost from our calculator,</p>
+        <p>just plug in your needs and generate a base price / estimate.</p>
+      </div>
+      <div class="estimate-calculator">
+        <h2>RESIDENTIAL SERVICES PRICES</h2>
+        <p>
+          Based off an average yard size of 10000 Square Feet, choose what you
+          need done weekly, monthly or just one time!
+        </p>
+        <div class="calculator">
+          <div class="form-container">
+            <div id="form">
+              <div class="service-name">
+                Landscape Maintenance (pruning / weed removal)
+              </div>
+              <div class="service-price"><input type="text" />$10/ Hr</div>
+            </div>
+            <div id="form">
+              <div class="service-name">Treatment & fertilization</div>
+
+              <div class="service-price">
+                <input type="text" />$0.003 / Square Foot
+              </div>
+            </div>
+            <div id="form">
+              <div class="service-name">Lawn Thatching / clean up</div>
+
+              <div class="service-price">
+                <input type="text" />$0.004 / Square Foot
+              </div>
+            </div>
+            <div id="form">
+              <div class="service-name">Mulching</div>
+
+              <div class="service-price">
+                <input type="text" />$0.001 / Square Foot
+              </div>
+            </div>
+            <div id="form">
+              <div class="service-name">Seeding</div>
+
+              <div class="service-price">
+                <input type="text" />$0.007 / Square Foot
+              </div>
+            </div>
+            <div id="form">
+              <div class="service-name">Aeration</div>
+
+              <div class="service-price">
+                <input type="text" />$0.003 / Square Foot
+              </div>
+            </div>
+            <div id="form">
+              <div class="service-name">Tree-health inspections</div>
+
+              <div class="service-price"><input type="text" />$5 / Tree</div>
+            </div>
+            <div id="form">
+              <div class="service-name">Tree trimming</div>
+
+              <div class="service-price"><input type="text" />$40 / Tree</div>
+            </div>
+            <div id="form">
+              <div class="service-name">Shrub pruning</div>
+
+              <div class="service-price"><input type="text" />$10 / Hr</div>
+            </div>
+            <div id="form">
+              <div class="service-name">Weed management</div>
+
+              <div class="service-price"><input type="text" />$10 / Hr</div>
+            </div>
+            <div id="form">
+              <div class="service-name">Tree removal</div>
+
+              <div class="service-price"><input type="text" />$80 / Tree</div>
+            </div>
+          </div>
+          <div class="price-result">
+            <p>Total:</p>
+            <div class="estimate-price"></div>
+            <p>CAD</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <my-footer></my-footer>
   </body>
 </html>
