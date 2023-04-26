@@ -95,7 +95,7 @@ input[type="submit"]:hover {
   background-color: var(--forestGreen-color);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .contact-p {
     text-align: center;
   }
