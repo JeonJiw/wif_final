@@ -64,3 +64,48 @@ function toggleList(event) {
     }
   }
 }
+
+/* Online Estimate */
+
+function EstimateCal() {
+  let maintenance = document.getElementById("maintenance").value;
+  let fertilization = document.getElementById("fertilization").value;
+  let thatching = document.getElementById("thatching").value;
+  let mulching = document.getElementById("mulching").value;
+  let seeding = document.getElementById("seeding").value;
+  let aeration = document.getElementById("aeration").value;
+  let treeInspections = document.getElementById("tree-inspections").value;
+  let treeTrimming = document.getElementById("tree-trimming").value;
+  let shrubPruning = document.getElementById("shrub-pruning").value;
+  let weedManagement = document.getElementById("weed-management").value;
+  let treeRemoval = document.getElementById("tree-removal").value;
+
+  let priceMaintainace = maintenance * 10;
+  let priceFertilization = fertilization * 0.003;
+  let priceThatching = thatching * 0.004;
+  let priceMulching = mulching * 0.001;
+  let priceSeeding = seeding * 0.007;
+  let priceAeration = aeration * 0.003;
+  let priceTreeInspections = treeInspections * 5;
+  let priceTreeTrimming = treeTrimming * 40;
+  let priceShrubPruning = shrubPruning * 10;
+  let priceWeedManagement = weedManagement * 10;
+  let priceTreeRemoval = treeRemoval * 80;
+
+  let resultOfEstimate =
+    priceMaintainace +
+    priceFertilization +
+    priceThatching +
+    priceMulching +
+    priceSeeding +
+    priceAeration +
+    priceTreeInspections +
+    priceTreeTrimming +
+    priceShrubPruning +
+    priceWeedManagement +
+    priceTreeRemoval;
+
+  let estimatePrice = document.querySelector(".estimate-price");
+  estimatePrice.innerHTML = resultOfEstimate;
+  console.log(estimatePrice);
+}

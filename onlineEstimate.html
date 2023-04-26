@@ -38,75 +38,109 @@
         <div class="calculator">
           <div class="form-container">
             <div id="form">
-              <div class="service-name">
-                Landscape Maintenance (pruning / weed removal)
-              </div>
-              <div class="service-price"><input type="text" />$10/ Hr</div>
-            </div>
-            <div id="form">
-              <div class="service-name">Treatment & fertilization</div>
-
+              <label for="maintenance"
+                >Landscape Maintenance (pruning / weed removal)</label
+              >
               <div class="service-price">
-                <input type="text" />$0.003 / Square Foot
+                <input type="text" id="maintenance" name="maintenance" />$10/ Hr
               </div>
             </div>
-            <div id="form">
-              <div class="service-name">Lawn Thatching / clean up</div>
 
+            <div id="form">
+              <label for="fertilization">Treatment & fertilization</label>
               <div class="service-price">
-                <input type="text" />$0.004 / Square Foot
+                <input
+                  type="text"
+                  id="fertilization"
+                  name="fertilization"
+                />$0.003 / Square Foot
               </div>
             </div>
-            <div id="form">
-              <div class="service-name">Mulching</div>
 
+            <div id="form">
+              <label for="thatching">Lawn Thatching / clean up</label>
               <div class="service-price">
-                <input type="text" />$0.001 / Square Foot
+                <input type="text" id="thatching" name="thatching" />$0.004 /
+                Square Foot
               </div>
             </div>
-            <div id="form">
-              <div class="service-name">Seeding</div>
 
+            <div id="form">
+              <label for="mulching">Mulching</label>
               <div class="service-price">
-                <input type="text" />$0.007 / Square Foot
+                <input type="text" id="mulching" name="mulching" />$0.001 /
+                Square Foot
               </div>
             </div>
-            <div id="form">
-              <div class="service-name">Aeration</div>
 
+            <div id="form">
+              <label for="seeding">Seeding</label>
               <div class="service-price">
-                <input type="text" />$0.003 / Square Foot
+                <input type="text" id="seeding" name="seeding" />$0.007 / Square
+                Foot
               </div>
             </div>
-            <div id="form">
-              <div class="service-name">Tree-health inspections</div>
 
-              <div class="service-price"><input type="text" />$5 / Tree</div>
+            <div id="form">
+              <label for="aeration">Aeration</label>
+              <div class="service-price">
+                <input type="text" id="aeration" name="aeration" />$0.003 /
+                Square Foot
+              </div>
             </div>
-            <div id="form">
-              <div class="service-name">Tree trimming</div>
 
-              <div class="service-price"><input type="text" />$40 / Tree</div>
+            <div id="form">
+              <label for="tree-inspections">Tree-health inspections</label>
+              <div class="service-price">
+                <input
+                  type="text"
+                  id="tree-inspections"
+                  name="tree-inspections"
+                />$5 / Tree
+              </div>
             </div>
-            <div id="form">
-              <div class="service-name">Shrub pruning</div>
 
-              <div class="service-price"><input type="text" />$10 / Hr</div>
+            <div id="form">
+              <label for="tree-trimming">Tree trimming</label>
+              <div class="service-price">
+                <input type="text" id="tree-trimming" name="tree-trimming" />$40
+                / Tree
+              </div>
             </div>
-            <div id="form">
-              <div class="service-name">Weed management</div>
 
-              <div class="service-price"><input type="text" />$10 / Hr</div>
+            <div id="form">
+              <label for="shrub-pruning">Shrub pruning</label>
+              <div class="service-price">
+                <input type="text" id="shrub-pruning" name="shrub-pruning" />$10
+                / Hr
+              </div>
             </div>
-            <div id="form">
-              <div class="service-name">Tree removal</div>
 
-              <div class="service-price"><input type="text" />$80 / Tree</div>
+            <div id="form">
+              <label for="weed-management">Weed management</label>
+              <div class="service-price">
+                <input
+                  type="text"
+                  id="weed-management"
+                  name="weed-management"
+                />$10 / Hr
+              </div>
+            </div>
+
+            <div id="form">
+              <label for="tree-removal">Tree removal</label>
+              <div class="service-price">
+                <input type="text" id="tree-removal" name="tree-removal" />$80 /
+                Tree
+              </div>
+            </div>
+            <div class="estimate-btn">
+              <button onclick="EstimateCal()">GET QUOTES</button>
             </div>
           </div>
           <div class="price-result">
             <p>Total:</p>
-            <div class="estimate-price"></div>
+            <p class="estimate-price"></p>
             <p>CAD</p>
           </div>
         </div>
