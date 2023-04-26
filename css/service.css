@@ -121,7 +121,23 @@ li {
   background-color: var(--pointOrange-color);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
+  .services-img-container {
+    display: flex;
+  }
+
+  .services-img-container img {
+    width: 60%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+  }
+  .services-img-container div.intro {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 750px) {
   #lists {
     display: flex;
     flex-direction: row;
