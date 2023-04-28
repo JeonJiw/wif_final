@@ -7,7 +7,7 @@ class MyHeader extends HTMLElement {
             ><img src="img/logo-transparent-png.png" alt=""
           /></a>
         </div>
-        <div id="menu-icon" onclick="openNav()">
+        <div id="menu-icon" onclick="toggleNavbar()">
           <i class="fa fa-bars fa-2x"></i>
         </div>
       </div>

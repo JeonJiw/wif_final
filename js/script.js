@@ -1,20 +1,24 @@
-let currentDate = new Date();
-let currentYear = currentDate.getFullYear();
+/* Footer year */
+const currentYear = new Date().getFullYear();
 document.getElementById("current-year").innerHTML = currentYear;
 
-let navbar = document.getElementById("nav-bar");
-let menuIcon = document.getElementById("menu-icon");
+/* Header Navbar */
 
-let open = 0;
-function openNav() {
-  if (open === 0) {
+const navbar = document.getElementById("nav-bar");
+const menuIcon = document.getElementById("menu-icon");
+
+let isOpen = 0;
+function toggleNavbar() {
+  if (isOpen === 0) {
     navbar.style.display = "block";
-    open = 1;
+    isOpen = 1;
   } else {
     navbar.style.display = "none";
-    open = 0;
+    isOpen = 0;
   }
 }
+
+/* About us slide */
 
 const slides = document.querySelectorAll(".slide");
 let current = 0;
@@ -31,16 +35,20 @@ function showSlide() {
   setTimeout(showSlide, 3000);
 }
 
-showSlide();
+if (window.location.href == "http://127.0.0.1:5500/about.html") {
+  showSlide();
+}
+
+/* Services lists */
 
 function toggleList(event) {
-  const parentDiv = event.target.parentNode;
-  const resOpenSpan = document.querySelector("#res-open");
-  const resCloseSpan = document.querySelector("#res-close");
-  const comOpenSpan = document.querySelector("#com-open");
-  const comCloseSpan = document.querySelector("#com-close");
-  const resList = document.querySelector("#res-list");
-  const comList = document.querySelector("#com-list");
+  let parentDiv = event.target.parentNode;
+  let resOpenSpan = document.querySelector("#res-open");
+  let resCloseSpan = document.querySelector("#res-close");
+  let comOpenSpan = document.querySelector("#com-open");
+  let comCloseSpan = document.querySelector("#com-close");
+  let resList = document.querySelector("#res-list");
+  let comList = document.querySelector("#com-list");
 
   if (parentDiv.classList.contains("residential-title")) {
     if (resList.style.display === "none") {
@@ -67,18 +75,18 @@ function toggleList(event) {
 
 /* Online Estimate */
 
-function EstimateCal() {
-  let maintenance = document.getElementById("maintenance").value;
-  let fertilization = document.getElementById("fertilization").value;
-  let thatching = document.getElementById("thatching").value;
-  let mulching = document.getElementById("mulching").value;
-  let seeding = document.getElementById("seeding").value;
-  let aeration = document.getElementById("aeration").value;
-  let treeInspections = document.getElementById("tree-inspections").value;
-  let treeTrimming = document.getElementById("tree-trimming").value;
-  let shrubPruning = document.getElementById("shrub-pruning").value;
-  let weedManagement = document.getElementById("weed-management").value;
-  let treeRemoval = document.getElementById("tree-removal").value;
+function calculateEstimatePrice() {
+  const maintenance = document.getElementById("maintenance").value;
+  const fertilization = document.getElementById("fertilization").value;
+  const thatching = document.getElementById("thatching").value;
+  const mulching = document.getElementById("mulching").value;
+  const seeding = document.getElementById("seeding").value;
+  const aeration = document.getElementById("aeration").value;
+  const treeInspections = document.getElementById("tree-inspections").value;
+  const treeTrimming = document.getElementById("tree-trimming").value;
+  const shrubPruning = document.getElementById("shrub-pruning").value;
+  const weedManagement = document.getElementById("weed-management").value;
+  const treeRemoval = document.getElementById("tree-removal").value;
 
   let priceMaintainace = maintenance * 10;
   let priceFertilization = fertilization * 0.003;
@@ -107,5 +115,4 @@ function EstimateCal() {
 
   let estimatePrice = document.querySelector(".estimate-price");
   estimatePrice.innerHTML = resultOfEstimate;
-  console.log(estimatePrice);
 }
