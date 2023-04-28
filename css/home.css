@@ -52,23 +52,22 @@ main div#main-img div.sec-img-cont div.main-text {
 }
 
 main div#main-img div.sec-img-cont div.main-text h1 {
-  display: none;
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 main div#main-img div.sec-img-cont div.main-text p {
   padding: 0.2em;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 main div#main-img div.sec-img-cont div.main-btn a {
-  width: 9em;
   margin: 0 1em 1em 0;
   border-radius: 0.3em;
   border: transparent;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   text-decoration-line: none;
+  font-size: 1em;
 }
 
 main div#main-img div.sec-img-cont div.main-btn a.service-btn {
@@ -112,14 +111,14 @@ main div.contact-info p#go-to:hover {
 }
 
 /* Browser */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   /* Main */
   main div#main-img div.fir-img-cont {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   main div#main-img div.sec-img-cont {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   main div.contact-info {
