@@ -4,6 +4,11 @@ main {
   background-color: var(--lightGreen-color);
   padding: 2em;
 }
+.testimonials-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .testimonials-intro h1 {
   margin-bottom: 1em;
@@ -14,12 +19,19 @@ main {
   margin-bottom: 1em;
 }
 
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .review-box {
   background-color: var(--lightBeige-color);
   padding: 1em;
   border: 0.1em solid var(--lightGrey-color);
   border-radius: 0.5em;
-  margin-bottom: 1em;
+  margin: 1em;
+  width: 25em;
 }
 
 .reviewer {
@@ -40,17 +52,4 @@ main {
 
 .review-content {
   line-height: 2;
-}
-
-@media only screen and (min-width: 600px) {
-  .review-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .review-box {
-    width: 25em;
-    margin: 1em;
-  }
 }
