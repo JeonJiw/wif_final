@@ -8,11 +8,17 @@ main {
 
 .estimate-intro {
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .estimate-intro h1 {
   font-size: 1.6em;
   font-weight: 800;
+  margin-bottom: 0.625em;
+}
+
+.estimate-intro h2 {
+  margin-top: 1em;
   margin-bottom: 0.625em;
 }
 
