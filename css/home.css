@@ -110,9 +110,7 @@ main div.contact-info p#go-to:hover {
   font-weight: 300;
 }
 
-/* Browser */
 @media only screen and (min-width: 800px) {
-  /* Main */
   main div#main-img div.fir-img-cont {
     font-size: 1.5em;
   }
