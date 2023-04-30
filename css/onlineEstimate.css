@@ -75,3 +75,15 @@ main {
   display: flex;
   justify-content: flex-end;
 }
+
+@media only screen and (min-width: 800px) {
+  .form-container {
+    width: 45em;
+    margin: auto;
+  }
+
+  .price-result {
+    width: 45em;
+    margin: 2em auto;
+  }
+}
